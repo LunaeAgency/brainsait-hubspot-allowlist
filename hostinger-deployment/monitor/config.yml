@@ -1,0 +1,21 @@
+# HubSpot Monitor Configuration
+monitor:
+  check_interval: 300
+  timeout: 10
+  
+domains:
+  na1:
+    - bf.hubspot-inbox.com
+    - notify.hubspotemail.net
+  
+  eu1:
+    - bf.eu1.r.hubspot-inbox.com
+    - notify.eu1.hubspotemail.net
+    
+  ap1:
+    - bf.ap1.r.hubspot-inbox.com
+    - notify.ap1.hubspotemail.net
+
+alerts:
+  enabled: true
+  email: admin@brainsait.com

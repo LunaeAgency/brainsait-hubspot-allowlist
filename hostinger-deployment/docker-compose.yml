@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+  # BrainSAIT HubSpot Proxy Service
+  hubspot-proxy:
+    image: nginx:alpine
+    container_name: brainsait-hubspot-proxy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+      - ./logs:/var/log/nginx
+    networks:
+      - brainsait-network
+    environment:
+      - TZ=Asia/Riyadh
+    labels:
+      - "com.brainsait.service=hubspot-proxy"
+      - "com.brainsait.version=1.0.0"
+
+  # HubSpot Connection Monitor
+  hubspot-monitor:
+    build:
+      context: ./monitor
+      dockerfile: Dockerfile
+    container_name: brainsait-hubspot-monitor
+    restart: unless-stopped
+    volumes:
+      - ./monitor/logs:/app/logs
+      - ./monitor/config.yml:/app/config.yml:ro
+    networks:
+      - brainsait-network
+    environment:
+      - HUBSPOT_DOMAINS=bf.hubspot-inbox.com,notify.hubspotemail.net
+      - CHECK_INTERVAL=300
+      - TZ=Asia/Riyadh
+    depends_on:
+      - hubspot-proxy
+    labels:
+      - "com.brainsait.service=hubspot-monitor"
+      - "com.brainsait.version=1.0.0"
+
+  # Health Check Dashboard
+  health-dashboard:
+    image: nginx:alpine
+    container_name: brainsait-health-dashboard
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./dashboard:/usr/share/nginx/html:ro
+    networks:
+      - brainsait-network
+    environment:
+      - TZ=Asia/Riyadh
+    labels:
+      - "com.brainsait.service=health-dashboard"
+
+networks:
+  brainsait-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.0.0/16
+          gateway: 172.28.0.1
+
+volumes:
+  nginx-logs:
+    driver: local
+  monitor-logs:
+    driver: local

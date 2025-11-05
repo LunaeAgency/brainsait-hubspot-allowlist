@@ -1,0 +1,5 @@
+# One-Line Deployment Command for Hostinger VPS
+# Copy and paste this into your VPS terminal after uploading
+
+cd /root && tar -xzf hostinger-deployment.tar.gz && cd hostinger-deployment && chmod +x deploy-to-hostinger.sh && ./deploy-to-hostinger.sh
+

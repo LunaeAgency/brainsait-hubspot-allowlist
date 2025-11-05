@@ -1,0 +1,43 @@
+# Logs
+*.log
+logs/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Archives (already committed)
+*.tar.gz
+
+# SSL certificates (security)
+ssl/
+*.pem
+*.key
+*.crt
+
+# Environment variables
+.env
+*.env.local
+
+# Docker
+.docker/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+terraform.tfvars
+
+# Sensitive
+secrets/
+credentials/

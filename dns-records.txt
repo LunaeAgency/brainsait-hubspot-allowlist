@@ -1,0 +1,40 @@
+# DNS Records for HubSpot Integration
+# Add these to your DNS provider
+
+# SPF Record (add to existing SPF)
+TXT @ "v=spf1 include:hubspotemail.net ~all"
+
+# DMARC Record (if not exists)
+TXT _dmarc "v=DMARC1; p=quarantine; rua=mailto:dmarc@brainsait.com"
+
+# HubSpot Verification Domains (to be verified)
+# Verify: bf.ap1.r.hs-inbox.com
+# Verify: bf.ap1.r.hubspot-inbox.com
+# Verify: bf.eu1.r.hs-inbox.com
+# Verify: bf.eu1.r.hubspot-inbox.com
+# Verify: bf.hs-inbox.com
+# Verify: bf.hubspot-inbox.com
+# Verify: bf.na2.r.hs-inbox.com
+# Verify: bf.na2.r.hubspot-inbox.com
+# Verify: bf.na3.r.hs-inbox.com
+# Verify: bf.na3.r.hubspot-inbox.com
+# Verify: notify.ap1.hubspotemail.net
+# Verify: notify.eu1.hubspotemail.net
+# Verify: notify.hubspotemail.net
+# Verify: notify.na2.hubspotemail.net
+# Verify: notify.na3.hubspotemail.net
+# Verify: notifybf1.ap1.hubspot.com
+# Verify: notifybf1.eu1.hubspot.com
+# Verify: notifybf1.hubspot.com
+# Verify: notifybf1.na2.hubspot.com
+# Verify: notifybf1.na3.hubspot.com
+# Verify: optin.ap1.hubspotemail.net
+# Verify: optin.eu1.hubspotemail.net
+# Verify: optin.hubspotemail.net
+# Verify: optin.na2.hubspotemail.net
+# Verify: optin.na3.hubspotemail.net
+# Verify: tickets.ap1.hubspotservicehub.com
+# Verify: tickets.eu1.hubspotservicehub.com
+# Verify: tickets.hubspotservicehub.com
+# Verify: tickets.na2.hubspotservicehub.com
+# Verify: tickets.na3.hubspotservicehub.com

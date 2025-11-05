@@ -1,0 +1,13 @@
+# Docker Network Configuration for HubSpot Integration
+# BrainSAIT Infrastructure
+
+version: '3.8'
+
+networks:
+  brainsait-hubspot:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16
+    driver_opts:
+      com.docker.network.bridge.name: br-hubspot
